@@ -52,3 +52,5 @@ Thumbs.db
 *.wmv
 
 ./clerk
+
+./Banking_new/config.yaml
