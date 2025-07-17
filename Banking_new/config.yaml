@@ -1,16 +1,15 @@
 # config.yaml
-
 openai:
-  api_key: "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"
-  org_id: "org-v1OxfSDLcUhxHFsp1r8SkVtl"
+  api_key: "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"
+  org_id: "org-9hDc3Evr6SSukX9jiyX1f78R"
 
 postgres:
   host: "localhost"
-  database: "text2sql2"  # ✅
+  database: "text2sql"
   user: "postgres"
   password: "root"
   port: 5432
-  uri: "postgresql+psycopg2://postgres:root@localhost:5432/text2sql2"
+  uri: "postgresql+psycopg2://postgres:root@localhost:5432/text2sql"
 
 embedding:
   provider: openai
@@ -28,9 +27,7 @@ settings:
   table_top_k: 3
   value_top_k: 7  # For value-level (categorical) semantic matches
   similarity_threshold: 0.7
-  
-  # SQL validation settings
-  forbidden_sql_keywords:            # Keywords that are not allowed in SQL
+  forbidden_sql_keywords:            
     - "insert"
     - "update" 
     - "delete"
@@ -65,3 +62,6 @@ llm:
 
 
   
+# config.yaml
+
+
